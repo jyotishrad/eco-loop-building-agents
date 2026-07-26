@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+*.pyc
+eplus_out_*/
+data/*.csv
+data/*.json
+*.epw
+models/*.idf
+!models/README.md
+.DS_Store
