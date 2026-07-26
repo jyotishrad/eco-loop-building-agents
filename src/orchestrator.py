@@ -38,14 +38,31 @@ def zones_to_dict(snap: SimSnapshot) -> dict:
 
 
 def make_ai_step_fn(agent: LLMAgent):
+    call_count = {"n": 0}
+    start_time = time.time()
+
     def on_step(snap: SimSnapshot) -> dict:
+        call_count["n"] += 1
         ctx = ToolContext(
             sim_time_hours=snap.sim_time_hours,
             outdoor_temp_c=snap.outdoor_temp_c,
             facility_electricity_j=snap.facility_electricity_j,
             zones=zones_to_dict(snap),
         )
-        return agent.decide(ctx)
+        actions = agent.decide(ctx)
+
+        # Live progress so the terminal never sits silent for 30+ minutes -
+        # prints every timestep with elapsed wall-clock time and a summary
+        # of what the agent decided, so you can SEE it working in real time.
+        elapsed = time.time() - start_time
+        n_setpoints = sum(len(v) for v in actions.values())
+        print(
+            f"[timestep {call_count['n']}] sim_t={snap.sim_time_hours:.2f}h "
+            f"elapsed={elapsed:.0f}s zones_updated={len(actions)} "
+            f"setpoints_changed={n_setpoints}",
+            flush=True,
+        )
+        return actions
     return on_step
 
 
