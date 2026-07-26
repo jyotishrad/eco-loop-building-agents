@@ -1,0 +1,36 @@
+Program Version,EnergyPlus, Version 26.1.0-6f2e40d102, YMD=2026.07.26 23:14,
+   ************* Beginning Zone Sizing Calculations
+   ** Warning ** RunPeriod: object=RUN PERIOD 1, start weekday (TUESDAY) does not match the start year (2017), corrected to SUNDAY.
+   ************* Beginning System Sizing Calculations
+   ** Warning ** Check input. Pump nominal power or motor efficiency is set to 0, for pump=SWHSYS1 PUMP
+   ** Warning ** Output:Meter: invalid Key Name="INTERIOREQUIPMENT:NATURALGAS" - not found.
+   ************* Testing Individual Branch Integrity
+   ************* All Branches passed integrity testing
+   ************* Testing Individual Supply Air Path Integrity
+   ************* All Supply Air Paths passed integrity testing
+   ************* Testing Individual Return Air Path Integrity
+   ************* All Return Air Paths passed integrity testing
+   ************* No node connection errors were found.
+   ************* Beginning Simulation
+   ** Warning ** Processing Monthly Tabular Reports: Variable names not valid for this simulation
+   **   ~~~   ** ...use Output:Diagnostics,DisplayExtraWarnings; to show more details on individual variables.
+   ** Severe  ** Data Exchange API: Index error in getMeterValue; received handle: -1
+   **   ~~~   ** The getMeterValue function will return 0 for now to allow the plugin to finish, then EnergyPlus will abort
+   ** Severe  ** Data Exchange API: Index error in getMeterValue; received handle: -1
+   **   ~~~   ** The getMeterValue function will return 0 for now to allow the plugin to finish, then EnergyPlus will abort
+   ** Severe  ** Data Exchange API: Index error in getMeterValue; received handle: -1
+   **   ~~~   ** The getMeterValue function will return 0 for now to allow the plugin to finish, then EnergyPlus will abort
+   ** Severe  ** Data Exchange API: Index error in getMeterValue; received handle: -1
+   **   ~~~   ** The getMeterValue function will return 0 for now to allow the plugin to finish, then EnergyPlus will abort
+   ** Severe  ** Data Exchange API: Index error in getMeterValue; received handle: -1
+   **   ~~~   ** The getMeterValue function will return 0 for now to allow the plugin to finish, then EnergyPlus will abort
+   ** Severe  ** Data Exchange API: Index error in getMeterValue; received handle: -1
+   **   ~~~   ** The getMeterValue function will return 0 for now to allow the plugin to finish, then EnergyPlus will abort
+   ** Severe  ** Data Exchange API: Index error in getMeterValue; received handle: -1
+   **   ~~~   ** The getMeterValue function will return 0 for now to allow the plugin to finish, then EnergyPlus will abort
+   ** Severe  ** Data Exchange API: Index error in getMeterValue; received handle: -1
+   **   ~~~   ** The getMeterValue function will return 0 for now to allow the plugin to finish, then EnergyPlus will abort
+   ** Severe  ** Data Exchange API: Index error in getMeterValue; received handle: -1
+   **   ~~~   ** The getMeterValue function will return 0 for now to allow the plugin to finish, then EnergyPlus will abort
+   ** Severe  ** Data Exchange API: Index error in getMeterValue; received handle: -1
+   **   ~~~   ** The getMeterValue function will return 0 for now to allow the plugin to finish, then EnergyPlus will abort

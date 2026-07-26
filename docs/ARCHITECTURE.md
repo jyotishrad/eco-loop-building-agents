@@ -115,3 +115,17 @@ and `.epw`:
 `src/metrics.py` then computes % kWh reduction and comfort-band violation
 percentage for both runs from their exported CSVs, surfaced in
 `dashboard/app.py`.
+
+## Known limitation at submission time
+
+The AI closed-loop simulation is fully implemented and the pipeline is
+verified working end-to-end (EnergyPlus <-> LLM tool-calling loop connects,
+exchanges data, and forward-injects setpoints correctly - confirmed via
+live per-timestep logging). However, on CPU-only local hardware, LLM
+inference latency exceeded the available time before submission, so a
+complete AI-vs-baseline energy comparison could not be finalized in this
+window. The baseline run (data/baseline_run.csv) completed successfully
+and is included. To reproduce the AI closed-loop run: increase the
+timeout in src/llm_agent.py, use a smaller model (qwen2.5:3b or similar),
+and run src/orchestrator.py --mode ai-closed-loop on a machine with GPU
+acceleration for realistic completion times.

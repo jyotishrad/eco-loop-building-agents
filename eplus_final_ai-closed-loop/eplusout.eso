@@ -1,0 +1,62 @@
+Program Version,EnergyPlus, Version 26.1.0-6f2e40d102, YMD=2026.07.26 23:14
+1,5,Environment Title[],Latitude[deg],Longitude[deg],Time Zone[],Elevation[m]
+2,8,Day of Simulation[],Month[],Day of Month[],DST Indicator[1=yes 0=no],Hour[],StartMinute[],EndMinute[],DayType
+3,5,Cumulative Day of Simulation[],Month[],Day of Month[],DST Indicator[1=yes 0=no],DayType  ! When Daily Report Variables Requested
+4,2,Cumulative Days of Simulation[],Month[]  ! When Monthly Report Variables Requested
+5,1,Cumulative Days of Simulation[] ! When Run Period Report Variables Requested
+6,1,Calendar Year of Simulation[] ! When Annual Report Variables Requested
+7,1,Environment,Site Outdoor Air Drybulb Temperature [C] !Hourly
+8,1,Environment,Site Outdoor Air Humidity Ratio [kgWater/kgDryAir] !Hourly
+9,1,Environment,Site Outdoor Air Relative Humidity [%] !Hourly
+452,1,ATTIC,Zone Mean Air Temperature [C] !Hourly
+453,1,CORE_ZN,Zone Mean Air Temperature [C] !Hourly
+454,1,PERIMETER_ZN_1,Zone Mean Air Temperature [C] !Hourly
+455,1,PERIMETER_ZN_2,Zone Mean Air Temperature [C] !Hourly
+456,1,PERIMETER_ZN_3,Zone Mean Air Temperature [C] !Hourly
+457,1,PERIMETER_ZN_4,Zone Mean Air Temperature [C] !Hourly
+1144,1,PSZ-AC:1,Air System Simulation Cycle On Off Status [] !Hourly
+1145,1,PSZ-AC:2,Air System Simulation Cycle On Off Status [] !Hourly
+1146,1,PSZ-AC:3,Air System Simulation Cycle On Off Status [] !Hourly
+1147,1,PSZ-AC:4,Air System Simulation Cycle On Off Status [] !Hourly
+1148,1,PSZ-AC:5,Air System Simulation Cycle On Off Status [] !Hourly
+1174,1,PSZ-AC:1,Air System Outdoor Air Economizer Status [] !Hourly
+1175,1,PSZ-AC:1,Air System Outdoor Air Flow Fraction [] !Hourly
+1176,1,PSZ-AC:2,Air System Outdoor Air Economizer Status [] !Hourly
+1177,1,PSZ-AC:2,Air System Outdoor Air Flow Fraction [] !Hourly
+1178,1,PSZ-AC:3,Air System Outdoor Air Economizer Status [] !Hourly
+1179,1,PSZ-AC:3,Air System Outdoor Air Flow Fraction [] !Hourly
+1180,1,PSZ-AC:4,Air System Outdoor Air Economizer Status [] !Hourly
+1181,1,PSZ-AC:4,Air System Outdoor Air Flow Fraction [] !Hourly
+1182,1,PSZ-AC:5,Air System Outdoor Air Economizer Status [] !Hourly
+1183,1,PSZ-AC:5,Air System Outdoor Air Flow Fraction [] !Hourly
+2310,1,PSZ-AC:1,Air System Total Heating Energy [J] !Hourly
+2311,1,PSZ-AC:1,Air System Total Cooling Energy [J] !Hourly
+2312,1,PSZ-AC:1,Air System Fan Electricity Energy [J] !Hourly
+2313,1,PSZ-AC:2,Air System Total Heating Energy [J] !Hourly
+2314,1,PSZ-AC:2,Air System Total Cooling Energy [J] !Hourly
+2315,1,PSZ-AC:2,Air System Fan Electricity Energy [J] !Hourly
+2316,1,PSZ-AC:3,Air System Total Heating Energy [J] !Hourly
+2317,1,PSZ-AC:3,Air System Total Cooling Energy [J] !Hourly
+2318,1,PSZ-AC:3,Air System Fan Electricity Energy [J] !Hourly
+2319,1,PSZ-AC:4,Air System Total Heating Energy [J] !Hourly
+2320,1,PSZ-AC:4,Air System Total Cooling Energy [J] !Hourly
+2321,1,PSZ-AC:4,Air System Fan Electricity Energy [J] !Hourly
+2322,1,PSZ-AC:5,Air System Total Heating Energy [J] !Hourly
+2323,1,PSZ-AC:5,Air System Total Cooling Energy [J] !Hourly
+2324,1,PSZ-AC:5,Air System Fan Electricity Energy [J] !Hourly
+12,1,Electricity:Facility [J] !Hourly
+1113,1,Fans:Electricity [J] !Hourly
+1212,1,Cooling:Electricity [J] !Hourly
+1312,1,Heating:Electricity [J] !Hourly
+60,1,InteriorLights:Electricity [J] !Hourly
+281,1,InteriorEquipment:Electricity [J] !Hourly
+1262,1,NaturalGas:Facility [J] !Hourly
+1286,1,Heating:NaturalGas [J] !Hourly
+1530,1,Water Heater:WaterSystems:NaturalGas [J] !Hourly
+14,9,Electricity:Facility [J] !Monthly [Value,Min,Day,Hour,Minute,Max,Day,Hour,Minute]
+1264,9,NaturalGas:Facility [J] !Monthly [Value,Min,Day,Hour,Minute,Max,Day,Hour,Minute]
+1360,9,Water:Facility [m3] !Monthly [Value,Min,Day,Hour,Minute,Max,Day,Hour,Minute]
+462,9,EnergyTransfer:Facility [J] !Monthly [Value,Min,Day,Hour,Minute,Max,Day,Hour,Minute]
+955,9,ElectricityPurchased:Facility [J] !Monthly [Value,Min,Day,Hour,Minute,Max,Day,Hour,Minute]
+1004,9,ElectricitySurplusSold:Facility [J] !Monthly [Value,Min,Day,Hour,Minute,Max,Day,Hour,Minute]
+1053,9,ElectricityNet:Facility [J] !Monthly [Value,Min,Day,Hour,Minute,M

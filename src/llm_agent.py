@@ -54,7 +54,7 @@ FUNCTIONS = {
 
 
 class LLMAgent:
-    def __init__(self, model: str = OLLAMA_MODEL, max_tool_hops: int = 6):
+    def __init__(self, model: str = OLLAMA_MODEL, max_tool_hops: int = 3):
         self.model = model
         self.max_tool_hops = max_tool_hops
 
@@ -65,7 +65,7 @@ class LLMAgent:
             "messages": messages,
             "tools": TOOL_SCHEMAS,
             "stream": False,
-        }, timeout=30)
+        }, timeout=120)
         resp.raise_for_status()
         return resp.json()
 
