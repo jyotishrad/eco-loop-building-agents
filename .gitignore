@@ -8,3 +8,4 @@ data/*.json
 models/*.idf
 !models/README.md
 .DS_Store
+eplus_test2_*/
